@@ -31,7 +31,7 @@ const App = () => {
     })
   }
 
-  //create the expression from live state
+  //create the expression from the live state
   function expression(){
     if (live.length === 0){
       return ['0']
