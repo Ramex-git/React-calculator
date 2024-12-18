@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", serif;
+}
+
+div.container{
+  --clr-light: white;
+  --clr-dark: rgb(35, 34, 34);
+  --clr-primary: #637381;
+  --clr-secondary: #1E1E1E;
+  --clr-accent: rgb(236, 236, 236);
+  --clr-btn: red;
+  
+  width: 100%;
+  height: 100vh;
+  background-color: var(--clr-dark);
+}
+
+div.dark{
+  --clr-light: black;
+  --clr-dark: rgb(255, 255, 255);
+  --clr-primary: #CCCDD7;
+  --clr-secondary: white;
+  --clr-accent: black;
+  --clr-btn: red;
+  
+  width: 100%;
+  height: 100vh;
+  background-color: var(--clr-dark);
+}
+
+
+.main{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 360px;
+  height: 650px;
+  background-color: var(--clr-light);
+  margin: auto;
+  padding: 0 50px;
+}
+
+.screen{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.live-cal{
+  font-size: 16px;
+  color: var(--clr-primary);
+  font-weight: lighter;
+}
+
+.total{
+  font-size: 32px;
+  color: var(--clr-secondary);
+  font-weight: bold;
+}
+
+.btn-container{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 10px;
+}
+
+.num-btn{
+  height: 60px;
+  width: 60px;
+  font-size: 18px;
+  color: var(--clr-secondary);
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.opp{
+  background-color: var(--clr-accent);
+}
+
+.opp svg{
+  color: var(--clr-secondary);
+}
+
+.equal{
+  height: 120px;
+  border-radius: 30px;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  background-color: var(--clr-btn);
+}
+
+.clear-all{
+  color: var(--clr-btn);
+}
+
